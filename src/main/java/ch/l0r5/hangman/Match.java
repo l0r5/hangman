@@ -54,17 +54,19 @@ public class Match {
                 if (randomWord.length() >= 2 && randomWord.length() <= 8) {
                     return randomWord;
                 }
+                break;
             case MEDIUM:
                 if (randomWord.length() >= 9 && randomWord.length() <= 12) {
                     return randomWord;
                 }
+                break;
             case HARD:
                 if (randomWord.length() > 12) {
                     return randomWord;
                 }
-            default:
-                return getRandomWord(wordList, difficulty);
+                break;
         }
+        return getRandomWord(wordList, difficulty);
     }
 
     private void checkGuess(char guessChar, String solution) {

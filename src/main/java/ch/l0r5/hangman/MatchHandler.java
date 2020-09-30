@@ -26,7 +26,7 @@ public class MatchHandler {
 
     private static List<String> provideWordList() {
         List<String> doc = new ArrayList<>();
-        String filePath = "resources/wortliste.txt";
+        String filePath = "src/main/resources/wortliste.txt";
         try {
             doc = readAllLines(new File(filePath).toPath(), StandardCharsets.UTF_8);
         } catch (IOException e) {
